@@ -53,42 +53,47 @@ body {
 
 .xyloButton1 {
     background-color: #00ccff;
+
+    &:active {
+        background-color: #33d6ff;
+    }
+
 }
 
 .xyloButton2 {
     background-color: #ffff00;
+
+    &:active {
+        background-color: #feff33;
+    }
+
 }
 
 .xyloButton3 {
     background-color: #00ff00;
+
+    &:active {
+        background-color: #33ff33;
+    }
+
 }
 
 .xyloButton4 {
     background-color: #fa0096;
+
+    &:active {
+        background-color: #ff2fab;
+    }
+
 }
 
 .xyloButton5 {
     background-color: #0f4295;
-}
 
-.xyloButton1:active {
-    background-color: #33d6ff;
-}
-
-.xyloButton2:active {
-    background-color: #feff33;
-}
-
-.xyloButton3:active {
-    background-color: #33ff33;
-}
-
-.xyloButton4:active {
-    background-color: #ff2fab;
-}
-
-.xyloButton5:active {
-    background-color: #0059e9;
+    &:active {
+        background-color: #0059e9;
+    }
+    
 }
 
 #content {
@@ -104,16 +109,21 @@ body {
     border: 0px solid #666;
     width: 320px;
     height: 100px;
-}
 
-.gridBox:hover {
-    background-position: 0 -100px;
-    background-color: #322;
-    cursor: pointer;
+    &:hover {
+        background-position: 0 -100px;
+        background-color: #322;
+        cursor: pointer;
+    }
+
 }
 
 .gridBox.active,
-.gridbox.active:hover {
-    background-position: 0 -200px;
-    cursor: auto;
+.gridbox.active{
+
+    &:hover {
+        background-position: 0 -200px;
+        cursor: auto;
+    }
+
 }
