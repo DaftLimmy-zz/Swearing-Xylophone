@@ -25,7 +25,13 @@ body {
     width: 480px;
     height: 480px;
     max-height: calc(100vh - 60px);
-    max-width: calc(100vw - 30px);
+    max-width: calc(100vw - 15px);
+}
+
+@media (max-width: 480px) {
+    #xyloBorder {
+        max-height: calc(100vw - 30px);
+    }
 }
 
 .xyloButton {
