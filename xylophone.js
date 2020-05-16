@@ -41,11 +41,71 @@ var manifest = [
 
 
 function playSound(target) {
-    new Audio(soundsPath + manifest[wordNumber][target.id] + extension).play();
-
-    if (wordNumber < 4) {
-        wordNumber++;
-    } else {
-        wordNumber = 0;
-    }
+  new Audio(soundsPath + manifest[wordNumber][target.id] + extension).play();
 }
+
+function chorus() {
+  wordNumber = 0;
+  playSound({id: 1});
+  playSound({id: 2});
+  playSound({id: 3});
+  
+  setTimeout(one, 1000);
+}
+
+function one() {
+  wordNumber = 1;
+  playSound({id: 0});
+  playSound({id: 4});
+  
+  setTimeout(two, 500);
+}
+
+function two() {
+  wordNumber = 2;
+  playSound({id: 1});
+  playSound({id: 4});
+  
+  setTimeout(three, 500);
+}
+
+function three() {
+  wordNumber = 3;
+  playSound({id: 1});
+  playSound({id: 3});
+  
+  setTimeout(four, 500);
+}
+
+function four() {
+  wordNumber = 3;
+  playSound({id: 2});
+  playSound({id: 4});
+  
+  setTimeout(five, 500);
+}
+
+function five() {
+  wordNumber = 3;
+  playSound({id: 1});
+  playSound({id: 3});
+  
+  setTimeout(six, 500);
+}
+
+function six() {
+  wordNumber = 3;
+  playSound({id: 2});
+  playSound({id: 4});
+  
+  setTimeout(seven, 500);
+}
+
+function seven() {
+  wordNumber = 4;
+  playSound({id: 0});
+  playSound({id: 1});
+  playSound({id: 4});
+
+}
+

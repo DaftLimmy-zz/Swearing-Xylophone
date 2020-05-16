@@ -11,12 +11,17 @@
 <body>
 	<div id="centreMe">
 		<div id="xyloBorder">
-			<div id="0" onclick="playSound(this)" class="xyloButton xyloButton1"></div>
-			<div id="1" onclick="playSound(this)" class="xyloButton xyloButton2"></div>
-			<div id="2" onclick="playSound(this)" class="xyloButton xyloButton3"></div>
-			<div id="3" onclick="playSound(this)" class="xyloButton xyloButton4"></div>
-			<div id="4" onclick="playSound(this)" class="xyloButton xyloButton5"></div>
+			<div id="0" onclick="chorus()" class="xyloButton xyloButton1"></div>
+			<div id="1" onclick="chorus()" class="xyloButton xyloButton2"></div>
+			<div id="2" onclick="chorus()" class="xyloButton xyloButton3"></div>
+			<div id="3" onclick="chorus()" class="xyloButton xyloButton4"></div>
+			<div id="4" onclick="chorus()" class="xyloButton xyloButton5"></div>
 		</div>
+    <div
+      onClick="chorus()"
+      style="margin:20px 0 0; font:24px sans-serif; color:#fff; text-align:center; cursor: pointer">
+      chorus demo (all clicks are the same)
+    </div>
 	</div>
 	<script src="xylophone.js"></script>
 </body>
