@@ -1,6 +1,6 @@
 var wordNumber = 0;
 var soundsPath = "sounds/";
-var extension = ".ogg"
+var extension = ".mp3"
 
 var manifest = [
     [ // You
