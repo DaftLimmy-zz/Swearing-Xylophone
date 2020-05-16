@@ -1,55 +1,39 @@
 html {
-    height: 100%;
-    overflow: hidden;
+    background-color: #333333;
+    /* Remove blue touch highlight on mobile devices */
+    -webkit-tap-highlight-color: transparent;
 }
 
+html,
 body {
-    background-color: #333333;
-
+    height: 100%;
+    display: grid;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: sans-serif;
-    font-size: 11px;
 }
 
 #centreMe {
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    margin-top: -250px;
-    margin-left: -250px;
-    top: 50%;
-    left: 50%;
+    margin: auto;
 }
 
 #xyloBorder {
+    box-sizing: border-box;
+    display: flex;
+    border: 10px solid white;
+    background: white;
     width: 480px;
     height: 480px;
-    padding: 10px;
-    padding-right: 0px;
-    background-color: white;
+    max-height: calc(100vh - 60px);
+    max-width: calc(100vw - 30px);
 }
 
-.xyloButton1,
-.xyloButton2,
-.xyloButton3,
-.xyloButton4,
-.xyloButton5 {
-    margin: -2px;
-    display: inline-block;
-    width: 96px;
-    height: 480px;
+.xyloButton {
     cursor: pointer;
-
-}
-
-.xyloButton1,
-.xyloButton2,
-.xyloButton3,
-.xyloButton4,
-.xyloButton5 {
-    cursor: pointer;
+    flex: 1 0 auto;
+    /* make the click feel snappier */
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
 }
 
 .xyloButton1 {
@@ -72,49 +56,22 @@ body {
     background-color: #0f4295;
 }
 
-.xyloButton1:active {
-    background-color: #33d6ff;
-}
+.xyloButton1:active {	
+    background-color: #33d6ff;	
+}	
 
-.xyloButton2:active {
-    background-color: #feff33;
-}
+.xyloButton2:active {	
+    background-color: #feff33;	
+}	
 
-.xyloButton3:active {
-    background-color: #33ff33;
-}
+.xyloButton3:active {	
+    background-color: #33ff33;	
+}	
 
-.xyloButton4:active {
-    background-color: #ff2fab;
-}
+.xyloButton4:active {	
+    background-color: #ff2fab;	
+}	
 
-.xyloButton5:active {
-    background-color: #0059e9;
-}
-
-#content {
-    width: 1000px;
-}
-
-.gridBox {
-    float: left;
-    background-repeat: no-repeat;
-    background-position: 0 0px;
-    background-color: #222;
-    background-size: 320px 300px;
-    border: 0px solid #666;
-    width: 320px;
-    height: 100px;
-}
-
-.gridBox:hover {
-    background-position: 0 -100px;
-    background-color: #322;
-    cursor: pointer;
-}
-
-.gridBox.active,
-.gridbox.active:hover {
-    background-position: 0 -200px;
-    cursor: auto;
+.xyloButton5:active {	
+    background-color: #0059e9;	
 }
