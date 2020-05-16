@@ -1,0 +1,12 @@
+{
+  "name": "swearing-xylophone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "xylophone.js",
+  "homepage": "https://github.com/RyanDeegan/Swearing-Xylophone#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
