@@ -56,20 +56,7 @@ function playSound(target) {
 
 window.onload = function() {
     document.addEventListener('keydown', function (event) {
-        if (event.keyCode == '49') {
-            player(0);
-        }
-        if (event.keyCode == '50') {
-            player(1);
-        }
-        if (event.keyCode == '51') {
-            player(2);
-        }
-        if (event.keyCode == '52') {
-            player(3);
-        }
-        if (event.keyCode == '53') {
-            player(4);
-        }
+        var keyCode = event.keyCode - 49;
+        player(keyCode);
     });
 }
