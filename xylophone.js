@@ -56,7 +56,6 @@ function playSound(target) {
 
 window.onload = function() {
     document.addEventListener('keydown', function (event) {
-        var keyCode = event.keyCode - 49;
-        player(keyCode);
+        player(event.keyCode - 49);
     });
 }
