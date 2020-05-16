@@ -2,7 +2,8 @@
     &:nth-child(#{$num}) {
        background-color: $bg;
 
-        &:focus {
+        &:focus,
+        &:active {
             outline: none;
             background-color: darken( $bg, 10% );
         }

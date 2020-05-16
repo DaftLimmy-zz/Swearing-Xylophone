@@ -31,26 +31,26 @@ body {
   border: none; }
   .button:nth-child(1) {
     background-color: #00ccff; }
-    .button:nth-child(1):focus {
+    .button:nth-child(1):focus, .button:nth-child(1):active {
       outline: none;
       background-color: #00a3cc; }
   .button:nth-child(2) {
     background-color: #ffff00; }
-    .button:nth-child(2):focus {
+    .button:nth-child(2):focus, .button:nth-child(2):active {
       outline: none;
       background-color: #cccc00; }
   .button:nth-child(3) {
     background-color: #00ff00; }
-    .button:nth-child(3):focus {
+    .button:nth-child(3):focus, .button:nth-child(3):active {
       outline: none;
       background-color: #00cc00; }
   .button:nth-child(4) {
     background-color: #fa0096; }
-    .button:nth-child(4):focus {
+    .button:nth-child(4):focus, .button:nth-child(4):active {
       outline: none;
       background-color: #c70077; }
   .button:nth-child(5) {
     background-color: #0f4295; }
-    .button:nth-child(5):focus {
+    .button:nth-child(5):focus, .button:nth-child(5):active {
       outline: none;
       background-color: #0a2d67; }
