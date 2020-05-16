@@ -11,14 +11,14 @@ gulp.task('build', function() {
     }))
 });
 
-gulp.task('browserSync', function() {
+gulp.task('watch', function(){
+
     browserSync.init({
         server: {
             baseDir: "./"
         }
     });
-});
 
-gulp.task('watch', gulp.series('browserSync', 'build'), function(){
     gulp.watch('styles.scss', gulp.series('build'));
+
 });
