@@ -3,19 +3,18 @@
 
 <head>
 	<title>Limmy's Swearing Xylophone</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="dist/styles.css" />
 	<script src="xylophone.js"></script>
 </head>
 
 <body>
-	<div id="centreMe">
-		<div id="xyloBorder">
-			<button id="0" onclick="playSound(this)" class="xyloButton1"></button>
-			<button id="1" onclick="playSound(this)" class="xyloButton2"></button>
-			<button id="2" onclick="playSound(this)" class="xyloButton3"></button>
-			<button id="3" onclick="playSound(this)" class="xyloButton4"></button>
-			<button id="4" onclick="playSound(this)" class="xyloButton5"></button>
-		</div>
+	<div class="xylo">
+		<button id="0" onclick="playSound(this)" class="button"><span class="visually-hidden">Play sound</span></button>
+		<button id="1" onclick="playSound(this)" class="button"><span class="visually-hidden">Play sound</span></button>
+		<button id="2" onclick="playSound(this)" class="button"><span class="visually-hidden">Play sound</span></button>
+		<button id="3" onclick="playSound(this)" class="button"><span class="visually-hidden">Play sound</span></button>
+		<button id="4" onclick="playSound(this)" class="button"><span class="visually-hidden">Play sound</span></button>
 	</div>
 </body>
 
