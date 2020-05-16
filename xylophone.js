@@ -1,4 +1,5 @@
 var wordNumber = 0;
+var pitchID = 0;
 var soundsPath = "sounds/";
 var extension = ".mp3"
 
@@ -39,13 +40,36 @@ var manifest = [
         "5_5",
     ]];
 
-
-function playSound(target) {
-    new Audio(soundsPath + manifest[wordNumber][target.id] + extension).play();
+function player(pitchID) {
+    new Audio(soundsPath + manifest[wordNumber][pitchID] + extension).play();
 
     if (wordNumber < 4) {
         wordNumber++;
     } else {
         wordNumber = 0;
     }
+}
+
+function playSound(target) {
+    player(target.id);
+}
+
+window.onload = function() {
+    document.addEventListener('keydown', function (event) {
+        if (event.keyCode == '49') {
+            player(0);
+        }
+        if (event.keyCode == '50') {
+            player(1);
+        }
+        if (event.keyCode == '51') {
+            player(2);
+        }
+        if (event.keyCode == '52') {
+            player(3);
+        }
+        if (event.keyCode == '53') {
+            player(4);
+        }
+    });
 }
