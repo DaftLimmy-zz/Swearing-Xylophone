@@ -5,19 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Limmy's Swearing Xylophone</title>
-  <meta name="theme-color" content="#333333">
   <link rel="stylesheet" href="xylophone.css">
+  <!-- Base64 favicon -->
+  <link rel="shortcut icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAJ1BMVEUAzf8GQZYDi8wAzf8GQZb9AJf//wAA/wCgE5e7R3Sd7GXD/wIA+QGpkC5XAAAAA3RSTlPAwDSBl3FlAAAALUlEQVQoz2NQMDZelpa2vbz8ZGhohIuLEAMzqoAjgzGqgMuowPARQI9sjOQAAIiKx/F3UvQAAAAAAElFTkSuQmCC">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+  <meta name="msapplication-TileColor" content="#333333">
+  <meta name="theme-color" content="#333333">
 </head>
 
 <body>
 
   <main>
-    <div class="xyloBorder">
-      <button id="0" onclick="playSound(this)" class="xyloButton xyloButton1"></button>
-      <button id="1" onclick="playSound(this)" class="xyloButton xyloButton2"></button>
-      <button id="2" onclick="playSound(this)" class="xyloButton xyloButton3"></button>
-      <button id="3" onclick="playSound(this)" class="xyloButton xyloButton4"></button>
-      <button id="4" onclick="playSound(this)" class="xyloButton xyloButton5"></button>
+    <div class="xylo">
+      <button id="0" onclick="playSound(this)" class="btn btn1"></button>
+      <button id="1" onclick="playSound(this)" class="btn btn2"></button>
+      <button id="2" onclick="playSound(this)" class="btn btn3"></button>
+      <button id="3" onclick="playSound(this)" class="btn btn4"></button>
+      <button id="4" onclick="playSound(this)" class="btn btn5"></button>
     </div>
   </main>
 

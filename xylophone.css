@@ -17,7 +17,7 @@ main {
     align-items: center;
 }
 
-.xyloBorder {
+.xylo {
     box-sizing: border-box;
     display: flex;
     border: 10px solid #fff;
@@ -28,7 +28,7 @@ main {
     max-width: calc(100vw - 15px);
 }
 
-.xyloButton {
+.xylo .btn {
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -37,32 +37,36 @@ main {
     touch-action: manipulation;
 }
 
-.xyloButton:active {
+.xylo .btn:active {
     opacity: 0.8;
 }
 
-.xyloButton1 {
+.xylo .btn1 {
     background: #0cf;
 }
 
-.xyloButton2 {
+.xylo .btn2 {
     background: #ff0;
 }
 
-.xyloButton3 {
+.xylo .btn3 {
     background: lime;
 }
 
-.xyloButton4 {
+.xylo .btn4 {
     background: #fa0096;
 }
 
-.xyloButton5 {
+.xylo .btn5 {
     background: #0f4295;
 }
 
 @media (max-width: 480px) {
-    .xyloBorder {
-        max-height: calc(100vw - 30px);
+    .xylo {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        max-height: 100vh;
+        max-width: 100vw;
     }
 }
