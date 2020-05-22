@@ -24,8 +24,6 @@ main {
     background: #fff;
     width: 480px;
     height: 480px;
-    max-height: calc(100vh - 60px);
-    max-width: calc(100vw - 15px);
 }
 
 .xylo .btn {
@@ -64,9 +62,7 @@ main {
 @media (max-width: 480px) {
     .xylo {
         flex-direction: column;
-        height: 100%;
-        width: 100%;
-        max-height: 100vh;
-        max-width: 100vw;
+        height: 100vh;
+        width: 100vw;
     }
 }
