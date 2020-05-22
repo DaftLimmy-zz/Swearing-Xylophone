@@ -1,83 +1,68 @@
 html {
-    background-color: #333333;
-    /* Remove blue touch highlight on mobile devices */
+    background: #333;
     -webkit-tap-highlight-color: transparent;
 }
 
 html,
 body {
     height: 100%;
-    display: grid;
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
-#centreMe {
-    margin: auto;
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-#xyloBorder {
+.xyloBorder {
     box-sizing: border-box;
     display: flex;
-    border: 10px solid white;
-    background: white;
+    border: 10px solid #fff;
+    background: #fff;
     width: 480px;
     height: 480px;
     max-height: calc(100vh - 60px);
     max-width: calc(100vw - 15px);
 }
 
-@media (max-width: 480px) {
-    #xyloBorder {
-        max-height: calc(100vw - 30px);
-    }
-}
-
 .xyloButton {
+    border: 0;
+    outline: 0;
     cursor: pointer;
     flex: 1 0 auto;
-    /* make the click feel snappier */
     -ms-touch-action: manipulation;
     touch-action: manipulation;
 }
 
+.xyloButton:active {
+    opacity: 0.8;
+}
+
 .xyloButton1 {
-    background-color: #00ccff;
+    background: #0cf;
 }
 
 .xyloButton2 {
-    background-color: #ffff00;
+    background: #ff0;
 }
 
 .xyloButton3 {
-    background-color: #00ff00;
+    background: lime;
 }
 
 .xyloButton4 {
-    background-color: #fa0096;
+    background: #fa0096;
 }
 
 .xyloButton5 {
-    background-color: #0f4295;
+    background: #0f4295;
 }
 
-.xyloButton1:active {	
-    background-color: #33d6ff;	
-}	
-
-.xyloButton2:active {	
-    background-color: #feff33;	
-}	
-
-.xyloButton3:active {	
-    background-color: #33ff33;	
-}	
-
-.xyloButton4:active {	
-    background-color: #ff2fab;	
-}	
-
-.xyloButton5:active {	
-    background-color: #0059e9;	
+@media (max-width: 480px) {
+    .xyloBorder {
+        max-height: calc(100vw - 30px);
+    }
 }
