@@ -26,7 +26,7 @@ main {
     height: 480px;
 }
 
-.xylo .btn {
+.btn {
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -35,27 +35,27 @@ main {
     touch-action: manipulation;
 }
 
-.xylo .btn:active {
+.btn:active {
     opacity: 0.8;
 }
 
-.xylo .btn1 {
+.light-blue {
     background: #0cf;
 }
 
-.xylo .btn2 {
+.yellow {
     background: #ff0;
 }
 
-.xylo .btn3 {
+.lime {
     background: lime;
 }
 
-.xylo .btn4 {
+.pink {
     background: #fa0096;
 }
 
-.xylo .btn5 {
+.dark-blue {
     background: #0f4295;
 }
 

@@ -1,9 +1,7 @@
 let wordNumber = 1;
-const soundsPath = 'sounds/';
-const extension = '.mp3';
 
 function playSound(target) {
-  new Audio(`${soundsPath + wordNumber}_${target.id + extension}`).play();
+  new Audio(`sounds/${wordNumber}_${target.id}.mp3`).play();
 
   if (wordNumber < 5) {
     wordNumber += 1;
